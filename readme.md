@@ -1,13 +1,19 @@
 // Week6Project 
 What is Blackjack?
 Blackjack, also known as 21, is a classic and widely played card game in casinos and homes worldwide. It's a game that combines skill, strategy, and a bit of luck. The primary objective is to beat the dealer by having a hand value as close to 21 as possible without exceeding it.
-Key Concepts:
+
+
+// Key Concepts:
 Card Values: In Blackjack, the cards' values are as follows:
     * Number cards (2-10) are worth their face value.
     * Face cards (Kings, Queens, and Jacks) are each worth 10 points.
     * Aces can be worth 1 or 11 points, depending on which value benefits the player.
-The Deal: Blackjack is typically played with one or more standard decks of 52 cards. Players receive two cards initially, and the dealer gets one card face up and one face down.
-The Objective: Is to get a hand value of 21 or closer to it than the dealer without going over 21. If you go over 21, you "bust" and lose the round.
+
+
+//The Deal: Blackjack is typically played with one or more standard decks of 52 cards. Players receive two cards initially, and the dealer gets one card face up and one face down.
+
+
+//The Objective: Is to get a hand value of 21 or closer to it than the dealer without going over 21. If you go over 21, you "bust" and lose the round.
 Gameplay:
     * Hit: To request another card to increase your hand's total.
     * Stand: To keep your current hand and end your turn.
