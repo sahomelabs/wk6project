@@ -13,32 +13,28 @@
     <body>
        
         <div class="game-conatainer">
-            <div class="">Player 1's Turn</div>
-            <div class="players">
+            
+
+            <div class="dealer"></div>
+                <h2>Dealer</h2>
+            <div class="dealerhand"></div>
                 <div class="player">
-                    <h2>Player 1</h2>
-                    <div class="" id="player1"></div>
-                    <div class="" id="player1-score">0</div>
-                    <button onclick="hit(1)">Hit</button>
-                    <button onclick="stand()">Stand</button>
-                    <button onclick="split()">Split</button>
-                    <button onclick="double()">Double</button>
-                </div>
+                
 
-            <div class="player">
-                <h2>Player 2</h2>
-                <div class="" id="player1"></div>
-                <div class="" id="player2-score">0</div>
-                <button onclick="hit(1)">Hit</button>
-                <button onclick="stand()">Stand</button>
-                <button onclick="split()">Split</button>
-                <button onclick="double()">Double</button>
+<!-- The Buttons to play the game-->
+            <div id="actions">
+                <button id="deal">Deal</button>
+                <button id="hit">Hit</button>
+                <button id="stand">Stand</button>
+                <button id="split">Split</button>
+                <button id="double">Double</button>
+                <button id="insurance">Insurance</button>
             </div>
+<!--money-->
+            <div id="money">
+                <span id="cash">Cash: $</span></div>
+                    <div id="bank">Winning: $</div>
         </div>
-        
-        
-
-
     
         <script src="app.js" async defer></script>
     </body>
