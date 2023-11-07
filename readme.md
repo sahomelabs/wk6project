@@ -1,4 +1,5 @@
 // Week6Project 
+
 What is Blackjack?
 Blackjack, also known as 21, is a classic and widely played card game in casinos and homes worldwide. It's a game that combines skill, strategy, and a bit of luck. The primary objective is to beat the dealer by having a hand value as close to 21 as possible without exceeding it.
 
