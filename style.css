@@ -1,8 +1,8 @@
 body {
     background-image: url(./logo/danielrcLogo.png);
     background-size: 400px;
-    /* position: flex; */
-    /* background-size: cover; */
+    /* background-repeat:  */
+    
 }
 
 
@@ -13,15 +13,15 @@ h1 {
   
 }
 
-#buttons {
+/* #buttons {
     position: absolute;
-    bottom: 0;
+    bottom: 15%;
     left: 5%;
     text-align: center;
     padding: 10px;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
 
-}
+} */
 
 .input-Bet {
     margin-right: 5px;
@@ -47,4 +47,11 @@ h1 {
 }
 
 
-
+.footer {
+    padding-top: 20%;
+    position: fixed;
+    bottom: 0%;
+    color: antiquewhite;
+    text-align: center;
+    width: 100%;
+}
