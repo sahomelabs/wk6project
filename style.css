@@ -6,6 +6,8 @@ body {
 }
 
 
+
+
 h1 {
     font-size: 2em;
   text-align: center;
@@ -13,15 +15,14 @@ h1 {
   
 }
 
-/* #buttons {
+.buttons {
     position: absolute;
-    bottom: 15%;
+    bottom: 20%;
     left: 5%;
-    text-align: center;
     padding: 10px;
     margin-bottom: 2rem;
 
-} */
+}
 
 .input-Bet {
     margin-right: 5px;
@@ -40,12 +41,20 @@ h1 {
    font-weight: bold;
 }
 
-#bank, #money{
+/* #bank, #money{
     margin: 20px, 5px;  
     color: white;
     
-}
+} */
 
+.bet{
+    position: absolute;
+    width: 20pc;
+    bottom: 25%;
+    right: 5%;
+    padding: 25px;
+    /* margin-bottom: 5rem; */
+}    
 
 .footer {
     padding-top: 20%;
