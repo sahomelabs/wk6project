@@ -15,25 +15,29 @@
             <!--Dealer Details-->
             <div class="dealer"></div>
                 <h2>Dealer</h2>
-                <div class="dealer-hand" id="hand"></div>
-                <p><span id="dealer-value"></span></p>
+                <div class="dealer-hand"></div>
                 <div class="dealertotalscore">Score: <span id="dealer-total-score">0</span></p>
             </div>
 
             <!--Player Details -->    
             <div class="player">
                 <h2>Player</h2>
-                    <div id="player-hand" class="hand"></div>
+                    <div class="player-hand"></div>
+                    <button onclick="hit()">Deal</button>
+                    <button onclick="hit('player')">Hit Me!</button>
+                    <button onclick="stand()">Stand</button>
+                    <button onclick="doubleDown()">Double Down</button>
+                    <button onclick="splitHands()">Split Hand</button>
                     <div class="playertotalscore">Score: <span id="player-total-score">0</span></p></div>
             </div>       
 
             <!-- The Buttons to play the game-->
-            <div class="playerButtons">
+            <!-- <div class="playerButtons">
                 <button onclick="hit()">Deal</button>
                 <button onclick="hit()">Hit Me!</button>
                 <button onclick="stand()">Stand</button>
                 <button onclick="doubleDown()">Double Down</button>
-                <button onclick="splitHands()">Split Hand</button>
+                <button onclick="splitHands()">Split Hand</button> -->
                 <!-- <button onclick="deal">Deal</button>
                 <button id="hit" class=" ">Hit</button>
                 <button id="stand" class=" ">Stand</button>
@@ -41,7 +45,7 @@
                 <button id="double" class=" ">Double</button>
                 <button id="insurance" class="">Insurance</button>
                 <button id="resetButton">Reset</button> -->
-            </div>
+            <!-- </div> -->
 
             <!--money-->
             <div class="money">

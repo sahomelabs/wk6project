@@ -5,8 +5,18 @@ body {
     
 }
 
+.player-hand, .dealer-hand {
+    display: flex;
+    flex-wrap: nowrap;
+}
 
 
+
+.card{
+    width: 125px;
+    height: 187px;
+    margin: 3px;
+}
 
 h1 {
     font-size: 2em;
@@ -15,13 +25,12 @@ h1 {
   
 }
 
-.buttons {
+.playerButtons {
     position: absolute;
     bottom: 20%;
     left: 5%;
-    padding: 10px;
+    padding: 2px;
     margin-bottom: 2rem;
-
 }
 
 .input-Bet {
