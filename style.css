@@ -1,7 +1,10 @@
-/* body {
-    background-image: url(./logo/drcLogo.png)
+body {
+    background-image: url(./logo/danielrcLogo.png);
+    background-size: 400px;
+    /* position: flex; */
+    /* background-size: cover; */
+}
 
-} */
 
 h1 {
     font-size: 2em;
