@@ -11,7 +11,6 @@ body {
     flex-direction: row;
     justify-content: space-around;
     padding: 1rem;
-    border-bottom: black solid .1rem;
     height: 50rem;
 }
 
@@ -30,12 +29,12 @@ body {
    text-align: center;
 }
 
-.game-container{
+.game-container {
     margin: auto;
     text-align: center;
     font-family: 'Courier New', Courier, monospace;
     color: #ffffff;
-    padding: 50px;
+    padding: 5px;
 
 }
 
