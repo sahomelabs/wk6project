@@ -5,65 +5,17 @@ body {
     
 }
 
-.player-hand, .dealer-hand {
-    display: flex;
-    flex-wrap: nowrap;
+.game-container{
+    margin: auto;
+    text-align: center;
 }
 
-
-
-.card{
-    width: 125px;
-    height: 187px;
-    margin: 3px;
+h1{
+    font-family: 'Courier New', Courier, monospace;
+    color: #ffffff;
+    text-align: center;
 }
 
-h1 {
-    font-size: 2em;
-  text-align: center;
-  color: #d7dee6;
-  
-}
-
-.playerButtons {
-    position: absolute;
-    bottom: 20%;
-    left: 5%;
-    padding: 2px;
-    margin-bottom: 2rem;
-}
-
-.input-Bet {
-    margin-right: 5px;
-    position: right
-    }
-
-
-
-.player{
-  justify-content: space-between;
-}
-
-
-#message {
-   font-size: 35px;
-   font-weight: bold;
-}
-
-/* #bank, #money{
-    margin: 20px, 5px;  
-    color: white;
-    
-} */
-
-.bet{
-    position: absolute;
-    width: 20pc;
-    bottom: 25%;
-    right: 5%;
-    padding: 25px;
-    /* margin-bottom: 5rem; */
-}    
 
 .footer {
     padding-top: 20%;

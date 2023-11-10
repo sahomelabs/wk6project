@@ -11,57 +11,31 @@
     </head>
         <h1>Welcome to Daniel Resort and Casino</h1>
     <body>
-        <div class="game-conatainer">
+        <div class="game-container">
             <!--Dealer Details-->
-            <div class="dealer"></div>
+            <div class="dealer">
                 <h2>Dealer</h2>
-                <div class="dealer-hand"></div>
-                <div class="dealertotalscore">Score: <span id="dealer-total-score">0</span></p>
+                <div id="dealer-box">
+                    <h2>Dealer: <span id="dealerscore">0</span></h2>
             </div>
 
             <!--Player Details -->    
             <div class="player">
                 <h2>Player</h2>
-                    <div class="player-hand"></div>
-                    <button onclick="hit()">Deal</button>
-                    <button onclick="hit('player')">Hit Me!</button>
-                    <button onclick="stand()">Stand</button>
-                    <button onclick="doubleDown()">Double Down</button>
-                    <button onclick="splitHands()">Split Hand</button>
-                    <div class="playertotalscore">Score: <span id="player-total-score">0</span></p></div>
-            </div>       
-
-            <!-- The Buttons to play the game-->
-            <!-- <div class="playerButtons">
-                <button onclick="hit()">Deal</button>
-                <button onclick="hit()">Hit Me!</button>
-                <button onclick="stand()">Stand</button>
-                <button onclick="doubleDown()">Double Down</button>
-                <button onclick="splitHands()">Split Hand</button> -->
-                <!-- <button onclick="deal">Deal</button>
-                <button id="hit" class=" ">Hit</button>
-                <button id="stand" class=" ">Stand</button>
-                <button id="split" class="">Split</button>
-                <button id="double" class=" ">Double</button>
-                <button id="insurance" class="">Insurance</button>
-                <button id="resetButton">Reset</button> -->
-            <!-- </div> -->
-
+            The Buttons to play the game-->
+            <div class="playerButtons">
+                <button id="hit" class="playerhitbutton">Hit</button>
+            </div>
             <!--money-->
             <div class="money">
                 <span id="cash">Cash: $</span>
                 <span id="bank">Winning: $</span>
             </div>
 
-            <!-- <div class="bet">
-                <label for="betAmount">Bet: $</label>
-                <input id="bet" type="number" name="bet" min="5" max="500" value="0" />
-            </div> -->
-
             <!--Messages Players Get-->  
-            <div class="message" id="message"> </div>
-
-          
+            <div class="message">
+                <h3>Scoreboard:</h3>
+            </div> id="message"> </div>
         
         </div>
         <script src="app.js" async defer></script>
