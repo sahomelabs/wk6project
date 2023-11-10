@@ -24,8 +24,9 @@ h1{
     position: absolute;
     bottom: 20%;
     left: 5%;
-    padding: 2px;
+    padding: 10px;
     margin-bottom: 2rem;
+    width: 85%;
 }
  
 
