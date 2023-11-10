@@ -7,7 +7,7 @@ body {
 
 .game-container{
     margin: auto;
-    text-align: center;
+    /* text-align: center; */
 }
 
 h1{
@@ -16,6 +16,14 @@ h1{
     text-align: center;
 }
 
+.playerButtons {
+    position: absolute;
+    bottom: 20%;
+    left: 5%;
+    padding: 2px;
+    margin-bottom: 2rem;
+}
+ 
 
 .footer {
     padding-top: 20%;
