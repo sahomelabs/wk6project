@@ -7,7 +7,11 @@ body {
 
 .game-container{
     margin: auto;
-    /* text-align: center; */
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    color: #ffffff;
+    padding: 50px;
+
 }
 
 h1{
