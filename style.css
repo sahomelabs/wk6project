@@ -33,18 +33,26 @@ h1{
     display: flex;
     color: white;
     font-family: Arial, sans-serif;
-   padding: 1rem;
+    padding: 1rem;
 }
 
 #dealer-score{
+    display: flex;
     color: white;
     font-family: Arial, sans-serif;
-   padding: 1rem;
-   text-align: center;
+    padding: 1rem;
+   /* text-align: center; */
 }
 
 
+#player-score img {
+    height: 15rem;
 
+}
+
+#dealer-score img{
+    height: 15rem;
+}
 
 
 .playerButtons {
@@ -58,7 +66,7 @@ h1{
  
 
 .footer {
-    padding-top: 2%;
+    padding-top: 13%;
     position: flex;
     bottom: 0%;
     color: antiquewhite;
