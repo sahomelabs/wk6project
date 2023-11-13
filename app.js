@@ -17,48 +17,54 @@ let danielCasinoGame = {
 };
 
 
+const Player = danielCasinoGame['player'];
+const Dealer = danielCasinoGame['dealer'];
 
-const Player = danielCasinoGame.player;
-const Dealer = danielCasinoGame.dealer;
+function drawCard(activeplayer) {
+    const randomNumber = Math.floor(Math.random() * (danielCasinoGame['cards'].length));
+    const currentCard = danielCasinoGame['cards'].splice(randomNumber, 1);
+    let card = document.createElement('img');
+    card.src = `./card_images/${currentCard}.png`;
+    document.querySelector(activeplayer['div']).appendChild(card);
+    
+    // Update Score
+    updateScore(currentCard, activeplayer);
 
-function drawCard(activePlayer) {
-  const randomNumber = Math.floor(Math.random() * danielCasinoGame.cards.length);
-  const currentCard = danielCasinoGame.cards.splice(randomNumber, 1);
-  const card = document.createElement('img');
-  card.src = `./card_images/${currentCard}.png`;
-  document.querySelector(activePlayer.div).appendChild(card);
-
-  // Update Score
-  updateScore(currentCard, activePlayer);
-
-  // Show Score
-  showScore(activePlayer);
+    // Show Score
+    showScore(activeplayer);
+    
 }
 
-// Hit Button
-document.querySelector('#hitButton').addEventListener('click', playerHit);
+function updateScore(currentcard, activeplayer){
+    // For Ace
+    if(currentcard == 'A-C' || currentcard == 'A-D' || currentcard == 'A-H' || currentcard == 'A-S'){
+        if((activeplayer['score'] + danielCasinoGame['cardsmap'][currentcard][1]) <= 21){
 
-
-function playerHit() {
- if (Dealer.score === 0) {
-   if (Player.score <= 21) {
-     drawCard(Player);
-   }
- }
-}
-
-// Dealer's Logic (2nd player) OR Stand button
-document.querySelector('#stand').addEventListener('click', Playerstand)
-
-function Playerstand(){
-    console.log('Stand button clicked');
-    if(Player['score']===0){
-        alert('Please Hit Some Cards First!');
-    }
-    else{
-        while(Dealer['score']<16){
-            drawCard(Dealer);
+            activeplayer['score'] += danielCasinoGame['cardsmap'][currentcard][1];
+        }
+        else{
+            activeplayer['score'] += danielCasinoGame['cardsmap'][currentcard][0];
         }
     }
+    else{  //For Other Cases
+        activeplayer['score'] += danielCasinoGame['cardsmap'][currentcard];
+    }   
 }
+
+// Score Function 
+function showScore(activeplayer){
+    if(activeplayer['score']>21){
+        document.querySelector(activeplayer['scoreSpan']).textContent = 'BUST!';
+        document.querySelector(activeplayer['scoreSpan']).style.color = 'red';
+    }
+    else{
+        document.querySelector(activeplayer['scoreSpan']).textContent = activeplayer['score'];
+    }
+}
+
+
+
+
+
+
 
