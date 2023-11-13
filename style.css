@@ -51,15 +51,18 @@ h1{
     height: 15rem;
 }
 
-
-.playerButtons {
-    position: justify-content;
-    bottom: 1%;
-    left: 5%;
-    padding: 1px;
-    margin-bottom: 2rem;
-}
  
+.playerhitbutton,
+.playerstandbutton,
+.reset {
+    background-color: #28a745;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+}
 
 .footer {
     padding-top: 13%;
