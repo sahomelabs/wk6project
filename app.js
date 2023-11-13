@@ -46,3 +46,19 @@ function playerHit() {
    }
  }
 }
+
+// Dealer's Logic (2nd player) OR Stand button
+document.querySelector('#stand').addEventListener('click', Playerstand)
+
+function Playerstand(){
+    console.log('Stand button clicked');
+    if(Player['score']===0){
+        alert('Please Hit Some Cards First!');
+    }
+    else{
+        while(Dealer['score']<16){
+            drawCard(Dealer);
+        }
+    }
+}
+
