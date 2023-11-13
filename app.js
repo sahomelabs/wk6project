@@ -35,3 +35,14 @@ function drawCard(activePlayer) {
   showScore(activePlayer);
 }
 
+// Hit Button
+document.querySelector('#hitButton').addEventListener('click', playerHit);
+
+
+function playerHit() {
+ if (Dealer.score === 0) {
+   if (Player.score <= 21) {
+     drawCard(Player);
+   }
+ }
+}

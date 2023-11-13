@@ -44,6 +44,8 @@ h1{
 
 #player-score img {
     height: 15rem;
+    border-radius: 0%;
+ 
 
 }
 
