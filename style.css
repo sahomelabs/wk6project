@@ -23,7 +23,7 @@ h1{
 }
 
 
-#notification {
+#notification{
     color: bisque;
 }
 
@@ -64,6 +64,7 @@ h1{
     cursor: pointer;
     border: none;
     border-radius: 5px;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 .footer {
