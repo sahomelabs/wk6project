@@ -18,7 +18,7 @@ h1{
 .gamescoreboard{
     display: flex;
     justify-content: space-around;
-    padding: 1rem;
+    padding: 2rem;
     height: 30rem;
 }
 
@@ -45,8 +45,6 @@ h1{
 #player-score img {
     height: 15rem;
     border-radius: 0%;
- 
-
 }
 
 #dealer-score img{
