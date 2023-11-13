@@ -66,5 +66,108 @@ function showScore(activeplayer){
 
 
 
+// Winner or losser Function
+function findwinner(){
+    console.log('findwinner');
+    let winner;
 
+    if(Player['score']<=21){
+        if(Dealer['score']<Player['score'] || Dealer['score']>21){
+            danielCasinoGame['wins']++;
+            winner = Player;
+        }else if(Dealer['score'] == Player['score']){
+            danielCasinoGame['draws']++;
+        }else{
+            danielCasinoGame['losses']++;
+            winner = Dealer;
+        }
+    }else if(Player['score']>21 && Dealer['score']<=21){
+        danielCasinoGame['losses']++;
+        winner = Dealer;
+    }else if(Player['score']>21 && Dealer['score']>21){
+        danielCasinoGame['draws']++;
+    }
+    return winner;
+}
+
+
+// Hit Button 
+document.querySelector('#hitButton').addEventListener('click', Playerhit);
+
+function Playerhit(){
+    console.log('Hit button clicked');
+    if(Dealer['score'] === 0){
+        if(Player['score']<=21){
+            drawCard(Player);
+        }
+    }
+}
+
+// stand function 
+document.querySelector('#stand').addEventListener('click', playerStand)
+
+function playerStand(){
+    console.log('Stand button clicked');
+    if(Player['score']===0){
+        alert('Click hit before stand!');
+    }
+    else{
+        while(Dealer['score']<16){
+            drawCard(Dealer);
+        }
+    }
+}
+// Result Function 
+function showResults(winner){
+    if(winner == Player){
+        document.querySelector('#notification').textContent = 'You Won!';
+        document.querySelector('#notification').style.color = 'green';
+        
+    }else if(winner == Dealer){
+        document.querySelector('#notification').textContent = "You Lost!";
+        document.querySelector('#notification').style.color = 'red';
+    }else{
+        document.querySelector('#notification').textContent = 'You Drew!';
+        document.querySelector('#notification').style.color = 'orange';
+    }
+
+}
+
+// Reset Button
+document.querySelector('#resetButton').addEventListener('click', gameReset);
+
+function gameReset(){
+
+    if(Player['score']=== 0){
+        alert('Click hit to start the game. Goodluck!');
+    }
+    else if(Dealer['score']===0){
+        alert('Click stand before reset');
+    }
+    else{
+
+    let playerimg = document.querySelector('#player-score').querySelectorAll('img');
+    let dealerimg = document.querySelector('#dealer-score').querySelectorAll('img');
+    
+    for(let i=0; i<playerimg.length; i++){
+        playerimg[i].remove();
+    }
+    for(let i=0; i<dealerimg.length; i++){
+        dealerimg[i].remove();
+    }
+
+    danielCasinoGame['cards'] = ['2-C','3-C','4-C','5-C','6-C','7-C','8-C','9-C','10-C','K-C','Q-C','J-C','A-C','2-D','3-D','4-D','5-D','6-D',
+    '7-D','8-D','9-D','10-D','K-D','Q-D','J-D','A-D','2-H','3-H','4-H','5-H','6-H','7-H','8-H','9-H','10-H','K-H','Q-H','J-H','A-H','2-S',
+    '3-S','4-S','5-S','6-S','7-S','8-S','9-S','10-S','K-S','Q-S','J-','A-S'];
+
+    Player['score'] = 0;
+    document.querySelector(Player['scoreSpan']).textContent = Player['score'];
+    document.querySelector(Player['scoreSpan']).style.color = 'red';
+    
+    Dealer['score'] = 0;
+    document.querySelector(Dealer['scoreSpan']).textContent = Dealer['score'];
+    document.querySelector(Dealer['scoreSpan']).style.color = 'red';
+    document.querySelector('#notification').style.color = 'white';
+    }
+}
 
