@@ -33,7 +33,7 @@ h1{
 #player-score{
     display: flex;
     color: white;
-    font-family: Arial, sans-serif;
+    font-family: 'Courier New', Courier, monospace;
     padding: 1rem;
 }
 
